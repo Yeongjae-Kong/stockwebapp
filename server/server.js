@@ -12,8 +12,12 @@ app.use('/', require('./routes/routes'));
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });
+
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
+}); //사용자가 다른 경로를 입력했을 때 Home 화면으로 전환
 
 app.listen(port, () => console.log(
     `Stock Tickr listening at http://localhost:${port}`

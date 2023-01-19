@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col,  Button, Row, Dropdown, Menu } from 'antd';
-import { ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, 
+import { ComposedChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, 
   Legend, ResponsiveContainer } from 'recharts';
 import { LineChartOutlined } from '@ant-design/icons';
 import {alertError} from '../helpers/alert';

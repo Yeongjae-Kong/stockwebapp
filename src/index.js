@@ -31,7 +31,7 @@ class CardBody extends React.Component {
           </Row>
         </Layout>
         <Footer />
-      </>
+		</>
     );
   }
 }
