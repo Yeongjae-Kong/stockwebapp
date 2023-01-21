@@ -20,7 +20,7 @@ class SectorsBody extends React.Component {
   }
 
   fetchSectorData(){
-    fetch("http://localhost:3001/alphavantage/SECTOR/")
+    fetch("http://reactstockwebapp.run.goorm.app/alphavantage/SECTOR/")
     .then(res => res.json())
     .then(
         (result) => {

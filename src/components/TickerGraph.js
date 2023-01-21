@@ -12,7 +12,7 @@ export class TickerGraph extends React.Component {
       error: null,
       isLoaded: false,
       items: [],
-      type: "TIME_SERIES_DAILY",
+      type: "TIME_SERIES_DAILY_ADJUSTED",
       interval: null
     };
     this.changeInterval = this.changeInterval.bind(this);
@@ -31,7 +31,7 @@ export class TickerGraph extends React.Component {
   }
 
   fetchGraphData(){
-    fetch("http://localhost:3001/alphavantage/" + 
+    fetch("https://reactstockwebapp.run.goorm.app/alphavantage/" + 
       this.state.type + "/" + (this.state.interval? this.state.interval + "/" :"") + this.props.stockTicker)
     .then(res => res.json())
     .then((result) => {
@@ -56,6 +56,8 @@ export class TickerGraph extends React.Component {
 
   render(){
     const data = this.state.items;
+	console.log("http://reactstockwebapp.run.goorm.app/alphavantage/" + 
+      this.state.type + "/" + (this.state.interval? this.state.interval + "/" :"") + this.props.stockTicker);
     console.log(data);
     return(
       <Col className = "graph-col" >

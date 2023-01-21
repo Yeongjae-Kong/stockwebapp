@@ -25,7 +25,7 @@ class IndexesContents extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:3001/alphavantage/GLOBAL_QUOTE/"+this.props.stockTicker)
+    fetch("http:///alphavantage/GLOBAL_QUOTE/"+this.props.stockTicker)
       .then(res => res.json())
       .then(
         (result) => {

@@ -27,7 +27,7 @@ class TickerBody extends React.Component {
   }
 
   fetchTickerData(){
-    fetch("http://localhost:3001/alphavantage/GLOBAL_QUOTE/"+this.props.stockTicker)
+    fetch("https://reactstockwebapp.run.goorm.app/alphavantage/GLOBAL_QUOTE/"+this.props.stockTicker)
       .then(res => res.json())
       .then(
         (result) => {

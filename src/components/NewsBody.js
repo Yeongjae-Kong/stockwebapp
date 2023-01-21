@@ -21,7 +21,7 @@ class NewsBody extends React.Component {
   }
 
   fetchNewsData(){
-    fetch("http://localhost:3001/news")
+    fetch("https://reactstockwebapp.run.goorm.app/news")
       .then(res => res.json())
       .then(
         (result) => {
