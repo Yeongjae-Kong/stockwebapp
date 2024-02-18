@@ -1,4 +1,4 @@
-## StockTickr
+## StockTicker
 
 This project was bootstrapped this project with [Create React App](https://github.com/facebook/create-react-app) and [Ant Design](https://ant.design)
 
@@ -6,9 +6,6 @@ I have a keen interest for investing and have been wanting to showcase some of m
 
 The reason I chose to use React for this web application is for the capability of consistently updating with realtime data. Unfortunately the free apis I implemented don't quite adhere to the demand, and often temporarily disable me from making further requests. Regardless using the React framework enabled me to create an extremely smooth feel for the changing components. And if I were to upgrade the API plan I would be able to easily add the realtime data capability.
 
-## Mantra
-
-Do as much server processing as possible, and use the least amount of gets to the api providers. 
 
 ## In Action
 ![Demo](readme_images/demo.gif?raw=true)
